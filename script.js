@@ -1,53 +1,79 @@
 // ===============================
-// CATEGORY TABS
+// EXPLORE BUTTON
 // ===============================
 
-const tabs = document.querySelectorAll(".tab");
-const productSections = document.querySelectorAll(".products");
+document.getElementById("exploreBtn").addEventListener("click", () => {
 
-tabs.forEach(tab => {
+    document.querySelector(".collection").scrollIntoView({
 
-    tab.addEventListener("click", () => {
-
-        // Remove active tab
-        tabs.forEach(t => t.classList.remove("active"));
-
-        // Activate clicked tab
-        tab.classList.add("active");
-
-        // Hide all categories
-        productSections.forEach(section => {
-            section.classList.remove("activeProducts");
-        });
-
-        // Show selected category
-        document
-            .getElementById(tab.dataset.category)
-            .classList.add("activeProducts");
+        behavior: "smooth"
 
     });
 
 });
 
+// ===============================
+// CATEGORY OPEN / CLOSE
+// ===============================
+
+const categories = document.querySelectorAll(".category");
+
+categories.forEach(category => {
+
+    const header = category.querySelector(".categoryHeader");
+    const products = category.querySelector(".products");
+    const arrow = category.querySelector(".arrow");
+
+    header.addEventListener("click", () => {
+
+        categories.forEach(item => {
+
+            if(item !== category){
+
+                item.querySelector(".products").style.display = "none";
+                item.querySelector(".arrow").innerHTML = "▼";
+
+            }
+
+        });
+
+        if(products.style.display === "flex"){
+
+            products.style.display = "none";
+            arrow.innerHTML = "▼";
+
+        }else{
+
+            products.style.display = "flex";
+            arrow.innerHTML = "▲";
+
+        }
+
+    });
+
+});
 
 // ===============================
-// OPEN AR DIRECTLY
+// PRODUCT CLICK
 // ===============================
 
 const viewer = document.getElementById("hiddenViewer");
 
-document.querySelectorAll(".product").forEach(product => {
+document.querySelectorAll(".product").forEach(product=>{
 
-    product.addEventListener("click", () => {
+    product.addEventListener("click",()=>{
 
-        viewer.src = product.dataset.model;
+        const model = product.dataset.model;
+        const poster = product.dataset.poster;
 
-        // Wait until model loads
-        viewer.addEventListener("load", () => {
+        viewer.src = model;
+        viewer.poster = poster;
+
+        setTimeout(()=>{
 
             viewer.activateAR();
 
-        }, { once: true });
+        },300);
 
     });
 
