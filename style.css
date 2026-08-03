@@ -43,13 +43,14 @@ display:block;
 .hero{
 
     text-align:center;
-    padding:20px 20px 10px;
+    padding:15px 20px 5px;
 
 }
 
 .hero h1{
 
-    font-size:33px;
+    font-size:27px;
+   font-weight:700;
     margin-bottom:15px;
     color:#4A2F2A;
 
@@ -57,17 +58,19 @@ display:block;
 
 .hero p{
 
-    font-size:17px;
-    color:#666;
-    margin-bottom:16px;
+    font-size:15px;
+    color:#777;
+    margin-bottom:10px;
 
 }
 
 .collectionIntro h2{
 
-    font-size:28px;
-    letter-spacing:2px;
-    margin-bottom:10px;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:1px;
+    color:#4A2F2A;
+    margin-bottom:6px;
 
 }
 
@@ -86,8 +89,8 @@ display:block;
 
     display:flex;
     justify-content:center;
-    gap:25px;
-    margin:10px auto 30px;
+    gap:18px;
+    margin:8px auto 18px;
 
     flex-wrap:wrap;
 
@@ -196,28 +199,33 @@ header{
 }
 
 .hero{
-    padding:15px 15px 10px;
+     padding:10px 15px 5px;
 }
 
 .hero h1{
-    font-size:38px;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:6px;
 }
 
 .hero p{
-    font-size:18px;
+   font-size:15px;
+    margin-bottom:8px;
 }
 
 .collectionIntro h2{
-    font-size:28px;
+   font-size:22px;
+    margin-bottom:6px;
 }
 
 .categoryTabs{
-    gap:18px;
-    margin:15px 10px 20px;
+     gap:8px;
+    margin:5px 10px 12px;
 }
 
 .tab{
-    font-size:18px;
+    font-size:15px;
+   font-weight:600;
 }
 
 .products{
