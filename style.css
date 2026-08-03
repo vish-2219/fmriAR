@@ -186,51 +186,100 @@ padding:20px 50px 60px;
    MOBILE
 ========================== */
 
-@media(max-width:768px){
+/* ==========================
+   MOBILE
+========================== */
 
-.hero h1{
+@media (max-width:768px){
 
-font-size:30px;
+header{
+
+    padding:0;
 
 }
 
-.hero p{
+.logo img{
 
-font-size:17px;
+    height:110px;
+
+}
+
+.hero{
+
+    padding:8px 10px 0;
+
+}
+
+.collectionIntro h2{
+
+    font-size:22px;
 
 }
 
 .categoryTabs{
 
-gap:20px;
+    gap:10px;
+    margin:10px 10px 15px;
+    flex-wrap:wrap;
 
 }
 
 .tab{
 
-font-size:18px;
-
-}
-
-.product{
-
-width:150px;
-
-}
-
-.product img{
-
-width:150px;
-
-height:150px;
+    font-size:15px;
+    padding-bottom:5px;
 
 }
 
 .products{
 
-padding:20px;
+    padding:10px;
+    gap:15px;
+    justify-content:center;
 
-gap:20px;
+}
+
+.product{
+
+    width:80px;
+
+}
+
+.product img{
+
+    width:80px;
+    height:80px;
+    border-radius:10px;
+
+}
+
+.product p{
+
+    font-size:11px;
+    margin-top:5px;
+    line-height:1.2;
+
+}
+
+.popupBox{
+
+    width:90%;
+    max-width:300px;
+    padding:25px;
+
+}
+
+.popupBox h2{
+
+    font-size:20px;
+    margin-bottom:20px;
+
+}
+
+.popupBox button{
+
+    font-size:16px;
+    padding:12px;
 
 }
 
