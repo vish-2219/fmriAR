@@ -1,1 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bakery AR</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script type="module"
+src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="logo">
+
+<img src="Screenshot (345).png" alt="Logo">
+
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+
+</nav>
+
+<div class="search">
+
+🔍
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<h1>Freshly Baked Every Day</h1>
+
+<p>Premium Desserts made with love</p>
+
+<button id="exploreBtn">
+
+Explore Collection
+
+</button>
+
+</section>
+
+<!-- ================= COLLECTION ================= -->
+
+<section class="collection">
+
+<h2>Our Collection</h2>
+
+<p>Tap a category to explore desserts in AR</p>
+
+<!-- Pastries -->
+
+<div class="category">
+
+<div class="categoryTitle">
+
+🍰 Pastries
+
+<span>▼</span>
+
+</div>
+
+<div class="products">
+
+<div class="product"
+
+data-model="models/cheesebl.glb"
+
+data-name="Classic Cheesecake"
+
+data-poster="images/cheesel.png">
+
+<img src="images/cheesel.png">
+
+<p>Classic Cheesecake</p>
+
+</div>
+
+<div class="product"
+
+data-model="models/chocosambl.glb"
+
+data-name="Dark Chocolate Mousse Pastry"
+
+data-poster="images/moouse.png">
+
+<img src="images/moouse.png">
+
+<p>Dark Chocolate Mousse</p>
+
+</div>
+
+<div class="product"
+
+data-model="models/vanillasam.glb"
+
+data-name="Strawberry Vanilla Delight"
+
+data-poster="images/vanilla.png">
+
+<img src="images/vanilla.png">
+
+<p>Strawberry Vanilla Delight</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Dessert Jars -->
+
+<div class="category">
+
+<div class="categoryTitle">
+
+🍮 Dessert Jars
+
+<span>▼</span>
+
+</div>
+
+<div class="products">
+
+<div class="product"
+data-model="models/lotus2com.glb"
+data-name="Lotus Biscoff Cheesecake Jar"
+data-poster="images/lotusj.png">
+
+<img src="images/lotusj.png">
+
+<p>Lotus Biscoff Jar</p>
+
+</div>
+
+<div class="product"
+data-model="models/redjarglb.glb"
+data-name="Red Velvet Cream Jar"
+data-poster="images/redj.png">
+
+<img src="images/redj.png">
+
+<p>Red Velvet Jar</p>
+
+</div>
+
+<div class="product"
+data-model="models/van.glb"
+data-name="Strawberry Vanilla Bliss Jar"
+data-poster="images/vanj.png">
+
+<img src="images/vanj.png">
+
+<p>Strawberry Vanilla Jar</p>
+
+</div>
+
+<div class="product"
+data-model="models/chocom.glb"
+data-name="Chocolate Indulgence Jar"
+data-poster="images/chocoj.png">
+
+<img src="images/chocoj.png">
+
+<p>Chocolate Indulgence</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Cupcakes -->
+
+<div class="category">
+
+<div class="categoryTitle">
+
+🧁 Cupcakes
+
+<span>▼</span>
+
+</div>
+
+<div class="products">
+
+<div class="product"
+data-model="models/vanilcup.glb"
+data-name="Classic Vanilla Cupcake"
+data-poster="images/vancup.png">
+
+<img src="images/vancup.png">
+
+<p>Vanilla Cupcake</p>
+
+</div>
+
+<div class="product"
+data-model="models/redcup.glb"
+data-name="Red Velvet Cupcake"
+data-poster="images/chococup.png">
+
+<img src="images/chococup.png">
+
+<p>Red Velvet Cupcake</p>
+
+</div>
+
+<div class="product"
+data-model="models/strawcup.glb"
+data-name="Strawberry Cream Cupcake"
+data-poster="images/strcup.png">
+
+<img src="images/strcup.png">
+
+<p>Strawberry Cupcake</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Donuts -->
+
+<div class="category">
+
+<div class="categoryTitle">
+
+🍩 Donuts
+
+<span>▼</span>
+
+</div>
+
+<div class="products">
+
+<div class="product"
+data-model="models/vandocom.glb"
+data-name="Vanilla Dream Donut"
+data-poster="images/vando.png">
+
+<img src="images/vando.png">
+
+<p>Vanilla Dream</p>
+
+</div>
+
+<div class="product"
+data-model="models/chocodocom.glb"
+data-name="Belgian Chocolate Donut"
+data-poster="images/chocodo.png">
+
+<img src="images/chocodo.png">
+
+<p>Belgian Chocolate</p>
+
+</div>
+
+<div class="product"
+data-model="models/pinkdocom.glb"
+data-name="Strawberry Glaze Donut"
+data-poster="images/pinkdo.png">
+
+<img src="images/pinkdo.png">
+
+<p>Strawberry Glaze</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= POPUP ================= -->
+
+<div id="viewerPopup">
+
+<div class="popupContent">
+
+<span id="closePopup">&times;</span>
+
+<h2 id="productTitle"></h2>
+
+<model-viewer
+
+id="viewer"
+
+camera-controls
+
+touch-action="pan-y"
+
+shadow-intensity="1"
+
+environment-image="neutral"
+
+ar
+
+ar-modes="scene-viewer webxr quick-look"
+
+poster=""
+
+src="">
+
+</model-viewer>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
