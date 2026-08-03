@@ -1,28 +1,53 @@
 // ===============================
-// CATEGORY TABS
+// EXPLORE BUTTON
 // ===============================
 
-const tabs = document.querySelectorAll(".tab");
-const productGroups = document.querySelectorAll(".products");
+document.getElementById("exploreBtn").addEventListener("click", () => {
 
-tabs.forEach(tab => {
+    document.querySelector(".collection").scrollIntoView({
 
-    tab.addEventListener("click", () => {
+        behavior: "smooth"
 
-        // Remove active tab
-        tabs.forEach(t => t.classList.remove("active"));
+    });
 
-        // Activate clicked tab
-        tab.classList.add("active");
+});
 
-        // Hide all products
-        productGroups.forEach(group => {
-            group.classList.remove("activeProducts");
+// ===============================
+// CATEGORY OPEN / CLOSE
+// ===============================
+
+const categories = document.querySelectorAll(".category");
+
+categories.forEach(category => {
+
+    const header = category.querySelector(".categoryHeader");
+    const products = category.querySelector(".products");
+    const arrow = category.querySelector(".arrow");
+
+    header.addEventListener("click", () => {
+
+        categories.forEach(item => {
+
+            if(item !== category){
+
+                item.querySelector(".products").style.display = "none";
+                item.querySelector(".arrow").innerHTML = "▼";
+
+            }
+
         });
 
-        // Show selected category
-        document.getElementById(tab.dataset.category)
-            .classList.add("activeProducts");
+        if(products.style.display === "flex"){
+
+            products.style.display = "none";
+            arrow.innerHTML = "▼";
+
+        }else{
+
+            products.style.display = "flex";
+            arrow.innerHTML = "▲";
+
+        }
 
     });
 
@@ -32,11 +57,23 @@ tabs.forEach(tab => {
 // PRODUCT CLICK
 // ===============================
 
-document.querySelectorAll(".product").forEach(product => {
+const viewer = document.getElementById("hiddenViewer");
 
-    product.addEventListener("click", () => {
+document.querySelectorAll(".product").forEach(product=>{
 
-        alert("Selected: " + product.dataset.name);
+    product.addEventListener("click",()=>{
+
+        const model = product.dataset.model;
+        const poster = product.dataset.poster;
+
+        viewer.src = model;
+        viewer.poster = poster;
+
+        setTimeout(()=>{
+
+            viewer.activateAR();
+
+        },300);
 
     });
 
