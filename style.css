@@ -76,7 +76,7 @@ display:block;
     letter-spacing:3px;
    color:#3F2925;
     margin-bottom:20px;
- visibility:hidden;
+ opacity:0;
 }
 
 .collectionIntro p{
