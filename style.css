@@ -1,292 +1,243 @@
+/* ==========================
+   GENERAL
+========================== */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
 
-font-family:Arial,sans-serif;
-background:#fff9f5;
-color:#333;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#FFF8F4;
+    color:#333;
 
 }
 
+/* ==========================
+   HEADER
+========================== */
+
 header{
 
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:20px 40px;
-
-background:#f6d6cc;
-
-position:sticky;
-
-top:0;
-
-z-index:100;
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    background:#F6D6CC;
 
 }
 
 .logo img{
 
-height:70px;
+    height:90px;
 
 }
 
-nav a{
-
-text-decoration:none;
-
-color:#333;
-
-font-weight:bold;
-
-font-size:18px;
-
-}
-
-.search{
-
-font-size:24px;
-
-cursor:pointer;
-
-}
+/* ==========================
+   HERO
+========================== */
 
 .hero{
 
-text-align:center;
-
-padding:80px 20px;
+    text-align:center;
+    padding:50px 20px 40px;
 
 }
 
 .hero h1{
 
-font-size:42px;
-
-margin-bottom:15px;
+    font-size:42px;
+    margin-bottom:15px;
+    color:#4A2F2A;
 
 }
 
 .hero p{
 
-font-size:20px;
-
-margin-bottom:35px;
-
-color:#666;
+    font-size:20px;
+    color:#666;
+    margin-bottom:40px;
 
 }
 
-.hero button{
+.collectionIntro h2{
 
-background:#f6d6cc;
-
-border:none;
-
-padding:15px 35px;
-
-font-size:18px;
-
-border-radius:30px;
-
-cursor:pointer;
-
-transition:.3s;
+    font-size:28px;
+    letter-spacing:2px;
+    margin-bottom:10px;
 
 }
 
-.hero button:hover{
+.collectionIntro p{
 
-transform:scale(1.05);
-
-}
-
-.collection{
-
-padding:40px;
+    font-size:17px;
+    color:#777;
 
 }
 
-.collection h2{
+/* ==========================
+   CATEGORY TABS
+========================== */
 
-text-align:center;
+.categoryTabs{
 
-font-size:34px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin:40px 20px;
 
-margin-bottom:10px;
-
-}
-
-.collection>p{
-
-text-align:center;
-
-margin-bottom:50px;
-
-color:#777;
+    flex-wrap:wrap;
 
 }
 
-.category{
+.tab{
 
-background:white;
+    background:none;
+    border:none;
 
-border-radius:18px;
+    font-size:20px;
 
-margin-bottom:25px;
+    cursor:pointer;
 
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+    padding-bottom:8px;
 
-overflow:hidden;
-
-}
-
-.categoryHeader{
-
-display:flex;
-
-align-items:center;
-
-padding:20px;
-
-cursor:pointer;
+    transition:.3s;
 
 }
 
-.categoryIcon{
+.tab:hover{
 
-font-size:34px;
-
-margin-right:20px;
+    color:#D16C8D;
 
 }
 
-.categoryText{
+.tab.active{
 
-flex:1;
+    color:#D16C8D;
 
-}
-
-.categoryText h3{
-
-margin-bottom:5px;
+    border-bottom:3px solid #D16C8D;
 
 }
 
-.categoryText p{
-
-color:#777;
-
-font-size:15px;
-
-}
-
-.arrow{
-
-font-size:20px;
-
-transition:.3s;
-
-}
+/* ==========================
+   PRODUCTS
+========================== */
 
 .products{
 
-display:none;
+    display:none;
 
-padding:20px;
+    justify-content:center;
 
-overflow-x:auto;
+    flex-wrap:wrap;
 
-gap:20px;
+    gap:35px;
 
-white-space:nowrap;
+    padding:20px 50px 60px;
+
+}
+
+.activeProducts{
+
+    display:flex;
 
 }
 
 .product{
 
-display:inline-block;
+    width:180px;
 
-width:170px;
+    cursor:pointer;
 
-margin-right:20px;
-
-cursor:pointer;
-
-transition:.3s;
+    transition:.3s;
 
 }
 
 .product:hover{
 
-transform:translateY(-6px);
+    transform:translateY(-8px);
 
 }
 
 .product img{
 
-width:170px;
+    width:180px;
 
-height:170px;
+    height:180px;
 
-border-radius:16px;
+    object-fit:cover;
 
-object-fit:cover;
+    border-radius:15px;
 
-background:white;
+    background:white;
 
-box-shadow:0 4px 10px rgba(0,0,0,.15);
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
 
 }
 
 .product p{
 
-text-align:center;
+    text-align:center;
 
-margin-top:10px;
+    margin-top:12px;
 
-font-weight:600;
+    font-size:16px;
 
-font-size:15px;
+    font-weight:600;
 
 }
+
+/* ==========================
+   MOBILE
+========================== */
 
 @media(max-width:768px){
 
-header{
-
-padding:15px;
-
-}
-
 .hero h1{
 
-font-size:32px;
+font-size:30px;
 
 }
 
-.collection{
+.hero p{
 
-padding:20px;
+font-size:17px;
+
+}
+
+.categoryTabs{
+
+gap:20px;
+
+}
+
+.tab{
+
+font-size:18px;
 
 }
 
 .product{
 
-width:140px;
+width:150px;
 
 }
 
 .product img{
 
-width:140px;
+width:150px;
 
-height:140px;
+height:150px;
+
+}
+
+.products{
+
+padding:20px;
+
+gap:20px;
 
 }
 
