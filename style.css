@@ -23,7 +23,7 @@ body{
 header{
 
     width:100%;
-    padding:20px 0;
+    padding:10px 0;
     text-align:center;
     background:#F6D6CC;
 
@@ -42,7 +42,7 @@ header{
 .hero{
 
     text-align:center;
-    padding:50px 20px 40px;
+    padding:30px 20px 20px;
 
 }
 
@@ -58,7 +58,7 @@ header{
 
     font-size:17px;
     color:#666;
-    margin-bottom:40px;
+    margin-bottom:20px;
 
 }
 
@@ -86,7 +86,7 @@ header{
     display:flex;
     justify-content:center;
     gap:35px;
-    margin:40px 20px;
+    margin:20px 20px 30px;
 
     flex-wrap:wrap;
 
