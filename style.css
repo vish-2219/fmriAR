@@ -39,41 +39,23 @@ header{
    HERO
 ========================== */
 
+/* ==========================
+   HERO
+========================== */
+
 .hero{
 
     text-align:center;
-    padding:30px 20px 20px;
-
-}
-
-.hero h1{
-
-    font-size:33px;
-    margin-bottom:15px;
-    color:#4A2F2A;
-
-}
-
-.hero p{
-
-    font-size:17px;
-    color:#666;
-    margin-bottom:20px;
+    padding:10px 20px 0;
 
 }
 
 .collectionIntro h2{
 
-    font-size:23px;
-    letter-spacing:2px;
-    margin-bottom:10px;
-
-}
-
-.collectionIntro p{
-
-    font-size:17px;
-    color:#777;
+    font-size:28px;
+    letter-spacing:1px;
+    color:#4A2F2A;
+    margin-bottom:8px;
 
 }
 
