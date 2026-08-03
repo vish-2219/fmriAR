@@ -135,9 +135,9 @@ display:block;
 
     border-right:1px solid #E5D6CF;
 
-    padding-right:10px;
+    padding-right:18px;
 
-    margin-right:2px;
+    margin-right:5px;
 
 }
 
@@ -238,23 +238,12 @@ header{
 }
 
 .categoryTabs{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    gap:15px;
-
-    padding:0 20px;
-
-    margin:0 auto 25px;
-
-    flex-wrap:nowrap;
-
+     gap:15px;
+    margin-bottom:25px;
 }
 
 .tab{
-    font-size:17px;
+    font-size:16px;
    font-weight:600;
 }
 
@@ -275,7 +264,7 @@ header{
 }
 
 .product p{
-    font-size:14px;
+    font-size:13px;
     margin-top:8px;
     line-height:1.2;
 }
