@@ -10,11 +10,12 @@
 
 body{
 
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
     background:#FFF8F4;
     color:#333;
 
 }
+
 
 /* ==========================
    HEADER
@@ -23,21 +24,22 @@ body{
 header{
 
     width:100%;
-    padding:8px 0;
-    text-align:center;
+    height:120px;
+
     background:#F6D6CC;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
 }
 
 .logo img{
 
-    height:180px;
+    height:110px;
 
 }
 
-/* ==========================
-   HERO
-========================== */
 
 /* ==========================
    HERO
@@ -46,18 +48,30 @@ header{
 .hero{
 
     text-align:center;
-    padding:10px 20px 0;
+    padding:25px 20px 10px;
 
 }
 
 .collectionIntro h2{
 
-    font-size:28px;
-    letter-spacing:1px;
+    font-size:34px;
+    font-weight:700;
+    letter-spacing:3px;
+
     color:#4A2F2A;
-    margin-bottom:8px;
 
 }
+
+.collectionIntro p{
+
+    margin-top:10px;
+
+    font-size:16px;
+
+    color:#666;
+
+}
+
 
 /* ==========================
    CATEGORY TABS
@@ -66,26 +80,34 @@ header{
 .categoryTabs{
 
     display:flex;
+
     justify-content:center;
-    gap:12px;
-    margin:20px 20px 30px;
 
     flex-wrap:wrap;
+
+    gap:28px;
+
+    margin:25px auto;
 
 }
 
 .tab{
 
     background:none;
-    border:none;
 
-    font-size:17px;
+    border:none;
 
     cursor:pointer;
 
+    font-size:18px;
+
+    font-weight:500;
+
+    color:#333;
+
     padding-bottom:8px;
 
-    transition:.3s;
+    transition:.25s;
 
 }
 
@@ -103,6 +125,7 @@ header{
 
 }
 
+
 /* ==========================
    PRODUCTS
 ========================== */
@@ -111,13 +134,17 @@ header{
 
     display:none;
 
-    justify-content:center;
+    flex-direction:column;
 
-    flex-wrap:wrap;
+    gap:15px;
 
-    gap:18px;
+    width:92%;
 
-    padding:10px 15px 25px;
+    max-width:520px;
+
+    margin:auto;
+
+    padding-bottom:40px;
 
 }
 
@@ -129,24 +156,21 @@ header{
 
 .product{
 
-    width:100%;
-    max-width:420px;
-
-    margin:8px auto;
-
-    padding:16px 18px;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
     background:white;
 
     border-radius:12px;
 
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    padding:16px 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
 
     cursor:pointer;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
 
     transition:.2s;
 
@@ -156,84 +180,88 @@ header{
 
     transform:translateY(-2px);
 
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+
 }
 
 .productName{
 
-    font-size:16px;
-    font-weight:600;
+    font-size:17px;
+
+    font-weight:500;
 
 }
 
 .productArrow{
 
-    font-size:24px;
+    font-size:26px;
 
     color:#D16C8D;
 
 }
 
 
-
-
-
 /* ==========================
    MOBILE
 ========================== */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
 header{
 
-    padding:0;
+    height:100px;
 
 }
 
 .logo img{
 
-    height:110px;
+    height:90px;
 
 }
 
 .hero{
 
-    padding:8px 10px 0;
+    padding:18px 15px 8px;
 
 }
 
 .collectionIntro h2{
 
-    font-size:22px;
+    font-size:28px;
+
+    letter-spacing:2px;
+
+}
+
+.collectionIntro p{
+
+    font-size:14px;
 
 }
 
 .categoryTabs{
 
-    gap:10px;
-    margin:10px 10px 15px;
-    flex-wrap:wrap;
+    gap:18px;
+
+    margin:18px auto;
 
 }
 
 .tab{
 
-    font-size:15px;
-    padding-bottom:5px;
+    font-size:16px;
 
 }
 
 .products{
 
-    padding:10px;
-    gap:15px;
-    justify-content:center;
+    width:94%;
+
+    gap:12px;
 
 }
 
 .product{
-
-    width:100%;
-    max-width:100%;
 
     padding:14px 16px;
 
@@ -247,29 +275,7 @@ header{
 
 .productArrow{
 
-    font-size:20px;
-
-}
-
-.popupBox{
-
-    width:90%;
-    max-width:300px;
-    padding:25px;
-
-}
-
-.popupBox h2{
-
-    font-size:20px;
-    margin-bottom:20px;
-
-}
-
-.popupBox button{
-
-    font-size:16px;
-    padding:12px;
+    font-size:22px;
 
 }
 
