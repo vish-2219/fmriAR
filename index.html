@@ -27,18 +27,6 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 </div>
 
-<nav>
-
-<a href="#">Home</a>
-
-</nav>
-
-<div class="search">
-
-🔍
-
-</div>
-
 </header>
 
 <!-- ================= HERO ================= -->
@@ -49,21 +37,33 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 <p>Premium Desserts made with love</p>
 
-<button id="exploreBtn">
+<div class="collectionIntro">
 
-Explore Collection
+<h2>OUR COLLECTION</h2>
 
-</button>
+</div>
 
 </section>
 
-<!-- ================= COLLECTION ================= -->
+<div class="categoryTabs">
 
-<section class="collection">
+<button class="tab active" data-category="pastry">
+Pastries
+</button>
 
-<h2>Our Collection</h2>
+<button class="tab" data-category="jar">
+Dessert Jars
+</button>
 
-<p>Tap a category to explore desserts in AR</p>
+<button class="tab" data-category="cupcake">
+Cupcakes
+</button>
+
+<button class="tab" data-category="donut">
+Donuts
+</button>
+
+</div>
 
 <!-- Pastries -->
 
@@ -71,21 +71,13 @@ Explore Collection
 
 <div class="categoryHeader">
 
-<div class="categoryIcon">🍰</div>
-
-<div class="categoryText">
 
 <h3>Pastries</h3>
 
-<p>Explore handcrafted pastries in AR</p>
-
 </div>
 
-<div class="arrow">▼</div>
 
-</div>
-
-<div class="products">
+<div class="products activeProducts" id="pastry">
 
 <div class="product"
 
@@ -137,21 +129,12 @@ data-poster="images/vanilla.png">
 <div class="category">
 <div class="categoryHeader">
 
-<div class="categoryIcon">🍮</div>
-
-<div class="categoryText">
 
 <h3>Dessert Jars</h3>
 
-<p>Rich layered desserts in AR</p>
-
 </div>
 
-<div class="arrow">▼</div>
-
-</div>
-
-<div class="products">
+<div class="products" id="jar">
 
 <div class="product"
 data-model="models/lotus2com.glb"
@@ -207,21 +190,12 @@ data-poster="images/chocoj.png">
 
 <div class="categoryHeader">
 
-<div class="categoryIcon">🧁</div>
-
-<div class="categoryText">
-
 <h3>Cupcakes</h3>
 
-<p>Soft and fluffy cupcakes in AR</p>
 
 </div>
 
-<div class="arrow">▼</div>
-
-</div>
-
-<div class="products">
+<div class="products" id="cupcake">
 
 <div class="product"
 data-model="models/vanilcup.glb"
@@ -266,21 +240,12 @@ data-poster="images/strcup.png">
 
 <div class="categoryHeader">
 
-<div class="categoryIcon">🍩</div>
-
-<div class="categoryText">
 
 <h3>Donuts</h3>
 
-<p>Delicious handcrafted donuts in AR</p>
-
 </div>
 
-<div class="arrow">▼</div>
-
-</div>
-
-<div class="products">
+<div class="products" id="donut">
 
 <div class="product"
 data-model="models/vandocom.glb"
