@@ -185,99 +185,61 @@ padding:20px 50px 60px;
    MOBILE
 ========================== */
 
-
-
 @media (max-width:768px){
 
 header{
-
     padding:0;
-
 }
 
 .logo img{
-
-    height:110px;
-
+    height:130px;
 }
 
 .hero{
+    padding:15px 15px 10px;
+}
 
-    padding:8px 10px 0;
+.hero h1{
+    font-size:38px;
+}
 
+.hero p{
+    font-size:18px;
 }
 
 .collectionIntro h2{
-
-    font-size:22px;
-
+    font-size:28px;
 }
 
 .categoryTabs{
-
-    gap:10px;
-    margin:10px 10px 15px;
-    flex-wrap:wrap;
-
+    gap:18px;
+    margin:15px 10px 20px;
 }
 
 .tab{
-
-    font-size:15px;
-    padding-bottom:5px;
-
+    font-size:18px;
 }
 
 .products{
-
-    padding:10px;
-    gap:15px;
+    padding:10px 15px 30px;
+    gap:20px;
     justify-content:center;
-
 }
 
 .product{
-
-    width:80px;
-
+    width:100px;
 }
 
 .product img{
-
-    width:80px;
-    height:80px;
-    border-radius:10px;
-
+    width:100px;
+    height:100px;
+    border-radius:12px;
 }
 
 .product p{
-
-    font-size:11px;
-    margin-top:5px;
+    font-size:13px;
+    margin-top:8px;
     line-height:1.2;
-
-}
-
-.popupBox{
-
-    width:90%;
-    max-width:300px;
-    padding:25px;
-
-}
-
-.popupBox h2{
-
-    font-size:20px;
-    margin-bottom:20px;
-
-}
-
-.popupBox button{
-
-    font-size:16px;
-    padding:12px;
-
 }
 
 }
