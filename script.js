@@ -1,80 +1,97 @@
 // ===============================
-// EXPLORE BUTTON
+// CATEGORY TABS
 // ===============================
 
-document.getElementById("exploreBtn").addEventListener("click", () => {
+const tabs = document.querySelectorAll(".tab");
 
-    document.querySelector(".collection").scrollIntoView({
+const productGroups = document.querySelectorAll(".products");
 
-        behavior: "smooth"
+tabs.forEach(tab=>{
 
-    });
+    tab.addEventListener("click",()=>{
 
-});
+        tabs.forEach(t=>t.classList.remove("active"));
 
-// ===============================
-// CATEGORY OPEN / CLOSE
-// ===============================
+        tab.classList.add("active");
 
-const categories = document.querySelectorAll(".category");
+        productGroups.forEach(group=>{
 
-categories.forEach(category => {
-
-    const header = category.querySelector(".categoryHeader");
-    const products = category.querySelector(".products");
-    const arrow = category.querySelector(".arrow");
-
-    header.addEventListener("click", () => {
-
-        categories.forEach(item => {
-
-            if(item !== category){
-
-                item.querySelector(".products").style.display = "none";
-                item.querySelector(".arrow").innerHTML = "▼";
-
-            }
+            group.classList.remove("activeProducts");
 
         });
 
-        if(products.style.display === "flex"){
-
-            products.style.display = "none";
-            arrow.innerHTML = "▼";
-
-        }else{
-
-            products.style.display = "flex";
-            arrow.innerHTML = "▲";
-
-        }
+        document
+        .getElementById(tab.dataset.category)
+        .classList.add("activeProducts");
 
     });
 
 });
 
 // ===============================
-// PRODUCT CLICK
+// POPUP
 // ===============================
 
+const popup = document.getElementById("arPopup");
+
+const popupTitle = document.getElementById("popupTitle");
+
 const viewer = document.getElementById("hiddenViewer");
+
+let selectedModel = "";
+
+let selectedPoster = "";
 
 document.querySelectorAll(".product").forEach(product=>{
 
     product.addEventListener("click",()=>{
 
-        const model = product.dataset.model;
-        const poster = product.dataset.poster;
+        popup.style.display="flex";
 
-        viewer.src = model;
-        viewer.poster = poster;
+        popupTitle.innerHTML=product.dataset.name;
 
-        setTimeout(()=>{
+        selectedModel=product.dataset.model;
 
-            viewer.activateAR();
-
-        },300);
+        selectedPoster=product.dataset.poster;
 
     });
+
+});
+
+// ===============================
+// VIEW IN AR
+// ===============================
+
+document.getElementById("viewAR").addEventListener("click",()=>{
+
+    viewer.src=selectedModel;
+
+    viewer.poster=selectedPoster;
+
+    setTimeout(()=>{
+
+        viewer.activateAR();
+
+    },500);
+
+});
+
+// ===============================
+// CLOSE
+// ===============================
+
+document.getElementById("closePopup").addEventListener("click",()=>{
+
+    popup.style.display="none";
+
+});
+
+window.addEventListener("click",(e)=>{
+
+    if(e.target===popup){
+
+        popup.style.display="none";
+
+    }
 
 });
