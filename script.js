@@ -3,7 +3,7 @@
 // ===============================
 
 const tabs = document.querySelectorAll(".tab");
-const productGroups = document.querySelectorAll(".products");
+const productSections = document.querySelectorAll(".products");
 
 tabs.forEach(tab => {
 
@@ -15,28 +15,39 @@ tabs.forEach(tab => {
         // Activate clicked tab
         tab.classList.add("active");
 
-        // Hide all products
-        productGroups.forEach(group => {
-            group.classList.remove("activeProducts");
+        // Hide all categories
+        productSections.forEach(section => {
+            section.classList.remove("activeProducts");
         });
 
         // Show selected category
-        document.getElementById(tab.dataset.category)
+        document
+            .getElementById(tab.dataset.category)
             .classList.add("activeProducts");
 
     });
 
 });
 
+
 // ===============================
-// PRODUCT CLICK
+// OPEN AR DIRECTLY
 // ===============================
+
+const viewer = document.getElementById("hiddenViewer");
 
 document.querySelectorAll(".product").forEach(product => {
 
     product.addEventListener("click", () => {
 
-        alert("Selected: " + product.dataset.name);
+        viewer.src = product.dataset.model;
+
+        // Wait until model loads
+        viewer.addEventListener("load", () => {
+
+            viewer.activateAR();
+
+        }, { once: true });
 
     });
 
