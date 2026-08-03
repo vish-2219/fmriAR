@@ -129,49 +129,53 @@ header{
 
 .product{
 
-    width:90px;
+    width:100%;
+    max-width:420px;
 
-    text-align:center;
+    margin:8px auto;
+
+    padding:16px 18px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
 
     cursor:pointer;
 
-    transition:.25s;
+    transition:.2s;
 
 }
 
 .product:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-2px);
 
 }
 
-.product img{
+.productName{
 
-    width:85px;
-
-    height:85px;
-
-    object-fit:cover;
-
-    border-radius:12px;
-
-    background:white;
-
-    box-shadow:0 3px 8px rgba(0,0,0,.12);
-
-}
-
-.product p{
-
-    margin-top:6px;
-
-    font-size:12px;
-
+    font-size:16px;
     font-weight:600;
 
-    line-height:1.2;
+}
+
+.productArrow{
+
+    font-size:24px;
+
+    color:#D16C8D;
 
 }
+
+
+
+
 
 /* ==========================
    MOBILE
