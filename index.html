@@ -8,10 +8,6 @@
 
 <title>Bakery AR</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="style.css">
 
 <script type="module"
@@ -36,6 +32,10 @@ src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <!-- ================= HERO ================= -->
 
 <section class="hero">
+
+<h1>Freshly Baked Every Day</h1>
+
+<p>Premium Desserts made with love</p>
 
 <div class="collectionIntro">
 
@@ -67,239 +67,224 @@ Donuts
 
 <!-- Pastries -->
 
+<div class="category">
+
+<div class="categoryHeader">
+
+
+<h3>Pastries</h3>
+
+</div>
+
 
 <div class="products activeProducts" id="pastry">
 
 <div class="product"
 
-data-model="cheesebl.glb"
+data-model="models/cheesebl.glb"
 
 data-name="Classic Cheesecake"
 
-data-poster="cheesel.png">
+data-poster="images/cheesel.png">
 
- <span class="productName">
-        Classic Cheesecake
-    </span>
+<img src="images/cheesel.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Classic Cheesecake</p>
+
 </div>
- </div>  
 
 <div class="product"
 
-data-model="chocosambl.glb"
+data-model="models/chocosambl.glb"
 
-data-name="Choco Mousse"
+data-name="Dark Chocolate Mousse Pastry"
 
-data-poster="moouse.png">
+data-poster="images/moouse.png">
 
- <span class="productName">
-        Choco Mousse
-    </span>
+<img src="images/moouse.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Dark Chocolate Mousse</p>
 
 </div>
- </div>  
 
 <div class="product"
 
-data-model="vanillasam.glb"
+data-model="models/vanillasam.glb"
 
-data-name="Vanilla Delight"
+data-name="Strawberry Vanilla Delight"
 
-data-poster="vanilla.png">
+data-poster="images/vanilla.png">
 
- <span class="productName">
-        Vanilla Delight
-    </span>
+<img src="images/vanilla.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Strawberry Vanilla Delight</p>
 
 </div>
 
-</div>  
+</div>
+
+</div>
 
 <!-- Dessert Jars -->
+<div class="category">
+<div class="categoryHeader">
 
 
+<h3>Dessert Jars</h3>
+
+</div>
 
 <div class="products" id="jar">
 
 <div class="product"
-data-model="lotus2com.glb"
-data-name="Biscoff Cheesecake"
-data-poster="lotusj.png">
+data-model="models/lotus2com.glb"
+data-name="Lotus Biscoff Cheesecake Jar"
+data-poster="images/lotusj.png">
 
+<img src="images/lotusj.png">
 
- <span class="productName">
-        Biscoff Cheesecake
-    </span>
-
-    <span class="productArrow">
-        ›
-    </span>
+<p>Lotus Biscoff Jar</p>
 
 </div>
- </div>  
 
 <div class="product"
-data-model="redjarglb.glb"
-data-name="Red Velvet Jar"
-data-poster="redj.png">
+data-model="models/redjarglb.glb"
+data-name="Red Velvet Cream Jar"
+data-poster="images/redj.png">
 
- <span class="productName">
-        Red Velvet Jar
-    </span>
+<img src="images/redj.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Red Velvet Jar</p>
 
 </div>
-</div>  
+
 <div class="product"
-data-model="van.glb"
-data-name="Strawberry Vanilla Bliss"
-data-poster="vanj.png">
+data-model="models/van.glb"
+data-name="Strawberry Vanilla Bliss Jar"
+data-poster="images/vanj.png">
 
- <span class="productName">
-        Strawberry Vanilla Bliss
-    </span>
+<img src="images/vanj.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Strawberry Vanilla Jar</p>
 
 </div>
-</div>  
+
 <div class="product"
-data-model="chocom.glb"
-data-name="Chocolate Indulgence"
-data-poster="chocoj.png">
+data-model="models/chocom.glb"
+data-name="Chocolate Indulgence Jar"
+data-poster="images/chocoj.png">
 
- <span class="productName">
-        Chocolate Indulgence
-    </span>
+<img src="images/chocoj.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Chocolate Indulgence</p>
 
 </div>
-</div>  
 
+</div>
+
+</div>
 
 <!-- Cupcakes -->
 
+<div class="category">
+
+<div class="categoryHeader">
+
+<h3>Cupcakes</h3>
+
+
+</div>
 
 <div class="products" id="cupcake">
 
 <div class="product"
-data-model="vanilcup.glb"
-data-name="Classic Vanilla"
-data-poster="vancup.png">
+data-model="models/vanilcup.glb"
+data-name="Classic Vanilla Cupcake"
+data-poster="images/vancup.png">
 
- <span class="productName">
-       Classic Vanilla
-    </span>
+<img src="images/vancup.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Vanilla Cupcake</p>
 
-</div>
-</div>  
-<div class="product"
-data-model="redcup.glb"
-data-name="Red Velvet"
-data-poster="chococup.png">
-
- <span class="productName">
-       Red Velvet
-    </span>
-
-    <span class="productArrow">
-        ›
-    </span>
-</div>  
 </div>
 
 <div class="product"
-data-model="strawcup.glb"
-data-name="Strawberry Delight"
-data-poster="strcup.png">
+data-model="models/redcup.glb"
+data-name="Red Velvet Cupcake"
+data-poster="images/chococup.png">
 
- <span class="productName">
-       Strawberry Delight
-    </span>
+<img src="images/chococup.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Red Velvet Cupcake</p>
 
 </div>
-</div>  
 
+<div class="product"
+data-model="models/strawcup.glb"
+data-name="Strawberry Cream Cupcake"
+data-poster="images/strcup.png">
+
+<img src="images/strcup.png">
+
+<p>Strawberry Cupcake</p>
+
+</div>
+
+</div>
+
+</div>
 
 <!-- Donuts -->
+
+<div class="category">
+
+<div class="categoryHeader">
+
+
+<h3>Donuts</h3>
+
+</div>
 
 <div class="products" id="donut">
 
 <div class="product"
-data-model="vandocom.glb"
-data-name="Vanilla Dream"
-data-poster="vando.png">
+data-model="models/vandocom.glb"
+data-name="Vanilla Dream Donut"
+data-poster="images/vando.png">
 
- <span class="productName">
-      Vanilla Dream
-    </span>
+<img src="images/vando.png">
 
-    <span class="productArrow">
-        ›
-    </span>
-</div>  
+<p>Vanilla Dream</p>
+
 </div>
 
 <div class="product"
-data-model="chocodocom.glb"
-data-name="Belgian Chocolate"
-data-poster="chocodo.png">
+data-model="models/chocodocom.glb"
+data-name="Belgian Chocolate Donut"
+data-poster="images/chocodo.png">
 
- <span class="productName">
-      Belgian Chocolate
-    </span>
+<img src="images/chocodo.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Belgian Chocolate</p>
+
 </div>
-</div>  
+
 <div class="product"
-data-model="pinkdocom.glb"
-data-name="Strawberry Glaze"
-data-poster="pinkdo.png">
+data-model="models/pinkdocom.glb"
+data-name="Strawberry Glaze Donut"
+data-poster="images/pinkdo.png">
 
- <span class="productName">
-      Strawberry Glaze
-    </span>
+<img src="images/pinkdo.png">
 
-    <span class="productArrow">
-        ›
-    </span>
+<p>Strawberry Glaze</p>
 
 </div>
-</div>  
 
+</div>
 
+</div>
 
+</section>
 
 <!-- ================= POPUP ================= -->
 <model-viewer
@@ -309,11 +294,9 @@ camera-controls
 ar
 ar-modes="scene-viewer webxr quick-look"
 environment-image="neutral"
-shadow-intensity="1"
-src="">
+shadow-intensity="1">
 </model-viewer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 
