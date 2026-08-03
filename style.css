@@ -67,7 +67,7 @@ header{
 
     display:flex;
     justify-content:center;
-    gap:20px;
+    gap:12px;
     margin:20px 20px 30px;
 
     flex-wrap:wrap;
@@ -79,7 +79,7 @@ header{
     background:none;
     border:none;
 
-    font-size:20px;
+    font-size:17px;
 
     cursor:pointer;
 
@@ -115,9 +115,9 @@ header{
 
     flex-wrap:wrap;
 
-    gap:25px;
+    gap:18px;
 
-    padding:20px 50px 60px;
+    padding:10px 15px 25px;
 
 }
 
@@ -129,21 +129,27 @@ header{
 
 .product{
 
-    width:150px;
+    width:90px;
+
+    text-align:center;
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:.25s;
 
-    text-align:center;
+}
+
+.product:hover{
+
+    transform:translateY(-4px);
 
 }
 
 .product img{
 
-    width:150px;
+    width:85px;
 
-    height:150px;
+    height:85px;
 
     object-fit:cover;
 
@@ -151,151 +157,117 @@ header{
 
     background:white;
 
-    box-shadow:0 4px 10px rgba(0,0,0,.10);
+    box-shadow:0 3px 8px rgba(0,0,0,.12);
 
 }
 
 .product p{
 
-    text-align:center;
+    margin-top:6px;
 
-    margin-top:10px;
-
-    font-size:15px;
+    font-size:12px;
 
     font-weight:600;
 
+    line-height:1.2;
+
 }
-
-
 
 /* ==========================
    MOBILE
 ========================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.hero h1{
+header{
 
-font-size:30px;
+    padding:0;
 
 }
 
-.hero p{
+.logo img{
 
-font-size:17px;
+    height:110px;
+
+}
+
+.hero{
+
+    padding:8px 10px 0;
+
+}
+
+.collectionIntro h2{
+
+    font-size:22px;
 
 }
 
 .categoryTabs{
 
-gap:20px;
+    gap:10px;
+    margin:10px 10px 15px;
+    flex-wrap:wrap;
 
 }
 
 .tab{
 
-font-size:18px;
-
-}
-
-.product{
-
-width:150px;
-
-}
-
-.product img{
-
-width:150px;
-
-height:150px;
+    font-size:15px;
+    padding-bottom:5px;
 
 }
 
 .products{
 
-padding:20px;
+    padding:10px;
+    gap:15px;
+    justify-content:center;
 
-gap:50px;
+}
+
+.product{
+
+    width:80px;
 
 }
 
+.product img{
+
+    width:80px;
+    height:80px;
+    border-radius:10px;
+
 }
-/* ==========================
-POPUP
-========================== */
 
-.popup{
+.product p{
 
-display:none;
-
-position:fixed;
-
-left:0;
-
-top:0;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,.45);
-
-justify-content:center;
-
-align-items:center;
-
-z-index:999;
+    font-size:11px;
+    margin-top:5px;
+    line-height:1.2;
 
 }
 
 .popupBox{
 
-background:white;
-
-padding:35px;
-
-border-radius:15px;
-
-text-align:center;
-
-width:320px;
+    width:90%;
+    max-width:300px;
+    padding:25px;
 
 }
 
 .popupBox h2{
 
-margin-bottom:25px;
+    font-size:20px;
+    margin-bottom:20px;
 
 }
 
 .popupBox button{
 
-width:100%;
-
-padding:15px;
-
-margin-top:15px;
-
-border:none;
-
-border-radius:10px;
-
-cursor:pointer;
-
-font-size:18px;
+    font-size:16px;
+    padding:12px;
 
 }
-
-#viewAR{
-
-background:#F6D6CC;
-
-}
-
-#closePopup{
-
-background:#eee;
 
 }
