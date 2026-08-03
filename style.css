@@ -23,7 +23,7 @@ body{
 header{
 
     width:100%;
-    padding:20px 0;
+    padding:10px 0;
     text-align:center;
     background:#F6D6CC;
 
@@ -31,7 +31,7 @@ header{
 
 .logo img{
 
-    height:90px;
+    height:170px;
 
 }
 
@@ -42,13 +42,13 @@ header{
 .hero{
 
     text-align:center;
-    padding:50px 20px 40px;
+    padding:30px 20px 20px;
 
 }
 
 .hero h1{
 
-    font-size:42px;
+    font-size:33px;
     margin-bottom:15px;
     color:#4A2F2A;
 
@@ -56,9 +56,9 @@ header{
 
 .hero p{
 
-    font-size:20px;
+    font-size:17px;
     color:#666;
-    margin-bottom:40px;
+    margin-bottom:16px;
 
 }
 
@@ -86,7 +86,7 @@ header{
     display:flex;
     justify-content:center;
     gap:35px;
-    margin:40px 20px;
+    margin:20px 20px 30px;
 
     flex-wrap:wrap;
 
