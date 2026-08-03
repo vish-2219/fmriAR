@@ -232,23 +232,22 @@ header{
 
 .product{
 
-    width:80px;
+    width:100%;
+    max-width:100%;
+
+    padding:14px 16px;
 
 }
 
-.product img{
+.productName{
 
-    width:80px;
-    height:80px;
-    border-radius:10px;
+    font-size:15px;
 
 }
 
-.product p{
+.productArrow{
 
-    font-size:11px;
-    margin-top:5px;
-    line-height:1.2;
+    font-size:20px;
 
 }
 
